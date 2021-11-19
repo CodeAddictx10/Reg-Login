@@ -5,15 +5,7 @@ import Login from "../views/Login.vue";
 
 const routes = [
     {
-        path: "/home",
-        name: "Home",
-        component: Home,
-        meta: {
-            title: "Home",
-        },
-    },
-    {
-        path: "/register",
+        path: "/",
         name: "Registration",
         component: Auth,
         meta: {
@@ -26,6 +18,14 @@ const routes = [
         component: Login,
         meta: {
             title: "Login",
+        },
+    },
+    {
+        path: "/home",
+        name: "Home",
+        component: Home,
+        meta: {
+            title: "Home",
         },
     },
 ];

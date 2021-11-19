@@ -5,7 +5,7 @@
             <div class="">
                 <router-link
                     v-if="page != 'Home'"
-                    :to="page == 'Login' ? '/register' : '/login'"
+                    :to="page == 'Login' ? '/' : '/login'"
                     class="custom-login"
                     >{{ page == "Login" ? "Register" : "Login" }}</router-link
                 >

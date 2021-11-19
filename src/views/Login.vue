@@ -68,7 +68,7 @@ export default {
                 try {
                     //make post req.
                     let response = await axios.post("login", data);
-                    if (response.status == 200 || true) {
+                    if (response.status == 200) {
                         this.msg =
                             "Login successful, redirecting you to the dashbaord ";
                         this.isLoggedIn(true);
