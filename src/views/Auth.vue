@@ -38,10 +38,6 @@
                                 placeholder="E.g Onadeji"
                                 aria-describedby="emailHelp"
                             />
-                            <small class="form-text text-muted"
-                                >We'll never share your email with anyone
-                                else.</small
-                            >
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1"
@@ -55,10 +51,6 @@
                                 placeholder="E.g sam@gmail.com"
                                 aria-describedby="emailHelp"
                             />
-                            <small id="emailHelp" class="form-text text-muted"
-                                >We'll never share your email with anyone
-                                else.</small
-                            >
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
@@ -70,10 +62,6 @@
                                 placeholder="E.g 08102267091"
                                 aria-describedby="emailHelp"
                             />
-                            <small class="form-text text-muted"
-                                >We'll never share your email with anyone
-                                else.</small
-                            >
                         </div>
                         <div class="form-group">
                             <label for="">Password</label>
