@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+/* customs */
+.custom-link {
+    color: #cd0c02;
+    text-decoration: underline;
+}
+.custom-link:hover {
+    color: #da1f15;
+}
+.form-wrapper-login {
+    margin-top: 10rem;
+}
+.custom-login {
+    color: #cd0c02;
+    text-decoration: underline;
+}
+.custom-login:hover {
+    color: #da1f15;
+}
+
+.custom-small-text {
+    font-size: 0.7rem;
+}
+
+/* paragraph */
+.heading-1 {
+    font-size: 2.5rem;
+}
+.wrapper {
+    background: #e5e5e5;
+    height: 100vh;
+}
+
+.form-wrapper {
+    background-color: #ffff;
+    border-radius: 15px;
+    padding: 4rem 8rem;
+}
+.form-wrapper form {
+    width: 70%;
+    height: 100%;
+}
+.form-wrapper .form-control,
+.form-inline .form-control {
+    font-size: 0.9rem;
+}
+.form-wrapper .form-control:focus,
+.form-inline .form-control:focus {
+    border: rgba(0, 0, 0, 0.686) 1px solid;
+    box-shadow: none;
+}
+.form-wrapper .form-control::placeholder {
+    font-size: 0.8rem;
+}
+
+/* Buttons */
+.btn-primary-bg {
+    background-color: #cd0c02;
+    color: white;
+}
+.btn-primary {
+    border: 0;
+    padding: 0.8rem 2.5rem;
+    transition: all 0.5s linear;
+}
+.btn-primary:hover,
+.btn-primary-two:hover {
+    background-color: white;
+    border: #cd0c02 1px solid;
+    color: black;
+}
+
+@media screen and (max-width: 762px) {
+}
+@media screen and (max-width: 375px) {
+    .form-wrapper {
+        padding: 2rem 1rem;
+    }
+    .form-wrapper-login {
+        margin-top: 10rem;
+    }
+    .custom-login {
+        color: #cd0c02;
+        text-decoration: underline;
+    }
+    .custom-login:hover {
+        color: #da1f15;
+    }
+    .form-wrapper form {
+        width: 100%;
+        height: 100%;
+    }
+    .heading-1 {
+        font-size: 1.4rem;
+    }
+
+    label {
+        font-size: 0.7rem;
+    }
+
+    .btn-primary {
+        padding: 0.4rem 1.7rem;
+        width: 100%;
+    }
+    small {
+        font-size: 0.6rem;
+    }
+}

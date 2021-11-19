@@ -1,30 +1,51 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+    <div class="container-fluid wrapper p-0">
+        <nav class="navbar navbar-light bg-white mb-3 mb-md-5 px-5">
+            <a class="navbar-brand">Logo</a>
+            <div class="">
+                <router-link
+                    v-if="page != 'Home'"
+                    :to="page == 'Login' ? '/register' : '/login'"
+                    class="custom-login"
+                    >{{ page == "Login" ? "Register" : "Login" }}</router-link
+                >
+                <span v-else style="cursor: pointer" @click="logout">
+                    Logout
+                </span>
+            </div>
+        </nav>
+        <div class="row">
+            <router-view />
+        </div>
+    </div>
 </template>
+<script>
+import { mapActions } from "vuex";
+export default {
+    data() {
+        return {
+            page: "register",
+        };
+    },
+    watch: {
+        // update page title
+        $route(to, from) {
+            this.page = to.meta.title;
+            document.title = to.meta.title || "Home";
+        },
+    },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+    methods: {
+        ...mapActions(["isLoggedIn"]),
+        // log user out
+        logout() {
+            this.isLoggedIn(false);
+            this.$router.push({
+                name: "Login",
+            });
+        },
+    },
+};
+</script>
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<style src="@/assets/main.css"></style>
