@@ -24,8 +24,6 @@
                                 class="form-control"
                                 id="firstName"
                                 v-model="firstName"
-                                placeholder="E.g Olufemi"
-                                aria-describedby="emailHelp"
                             />
                         </div>
                         <div class="form-group">
@@ -35,8 +33,6 @@
                                 class="form-control"
                                 id="lastName"
                                 v-model="lastName"
-                                placeholder="E.g Onadeji"
-                                aria-describedby="emailHelp"
                             />
                         </div>
                         <div class="form-group">
@@ -48,8 +44,6 @@
                                 v-model="email"
                                 class="form-control"
                                 id="exampleInputEmail1"
-                                placeholder="E.g sam@gmail.com"
-                                aria-describedby="emailHelp"
                             />
                         </div>
                         <div class="form-group">
@@ -59,8 +53,6 @@
                                 class="form-control"
                                 id="phone"
                                 v-model="phone"
-                                placeholder="E.g 08102267091"
-                                aria-describedby="emailHelp"
                             />
                         </div>
                         <div class="form-group">

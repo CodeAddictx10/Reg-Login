@@ -19,7 +19,6 @@
                                 class="form-control"
                                 id="phone"
                                 v-model="phone"
-                                placeholder="E.g 08102267091"
                             />
                         </div>
 
@@ -28,7 +27,6 @@
                             <input
                                 type="password"
                                 class="form-control"
-                                placeholder="Enter Password"
                                 v-model="password"
                             />
                         </div>
