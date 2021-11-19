@@ -146,14 +146,12 @@ export default {
                     response.status == 200 &&
                     response.data.success.status == "SUCCESS"
                 ) {
-                    console.log(response);
                     this.successMsg = true;
-                    this.message =
-                        "Registration successful, redirecting to Login...";
-
+                    this.message = "Registration successful...";
+                    localStorage.setItem("GRAND_PHONE", this.phone);
                     setTimeout(() => {
                         this.$router.push({
-                            name: "Login",
+                            name: "Verify",
                         });
                     }, 3000);
                 } else {

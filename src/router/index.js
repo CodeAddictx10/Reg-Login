@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Auth from "../views/Auth.vue";
+import Verify from "../views/Verify.vue";
 import Login from "../views/Login.vue";
 
 const routes = [
@@ -9,7 +10,15 @@ const routes = [
         name: "Registration",
         component: Auth,
         meta: {
-            title: "Registration ",
+            title: "Registration",
+        },
+    },
+    {
+        path: "/verify",
+        name: "Verify",
+        component: Verify,
+        meta: {
+            title: "Verification",
         },
     },
     {
