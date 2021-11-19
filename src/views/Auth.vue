@@ -61,7 +61,6 @@
                                 type="password"
                                 v-model="password"
                                 class="form-control"
-                                placeholder="Enter Password"
                             />
                         </div>
 
